@@ -1,0 +1,32 @@
+//
+//  DXDoctor-Prefix.pch
+//  DXDoctor
+//
+//  Created by Mask on 15/9/24.
+//  Copyright (c) 2015年 Mask. All rights reserved.
+//
+
+#ifndef DXDoctor_DXDoctor_Prefix_pch
+#define DXDoctor_DXDoctor_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "DXMacros.h"
+#import "DXUrl.h"
+#import "DeviceManager.h"
+#import "AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
+
+
+#import "DXQuestionAnswerController.h"
+#import "DXQuestionAnswerModel.h"
+#import "DXQuestionAnswerCell.h"
+
+//更多
+#import "DXHealthTestController.h"
+#import "DXHealthTestModel.h"
+#import "DXHealthTestCell.h"
+#import "DXDoctorConsultController.h"
+//测试答题
+#import "DXTestQuestionController.h"
+#endif

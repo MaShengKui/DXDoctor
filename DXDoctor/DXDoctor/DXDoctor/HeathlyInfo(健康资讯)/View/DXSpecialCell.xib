@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpecialCell" id="KGk-i7-Jjw" customClass="DXSpecialCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L4K-eS-2pA">
+                        <rect key="frame" x="13" y="30" width="95" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="L4b-Ue-pb0"/>
+                            <constraint firstAttribute="width" constant="95" id="UiI-oe-tzD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-QK-0gM">
+                        <rect key="frame" x="13" y="8" width="344" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="RKq-Bl-vdX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUG-fc-fhk">
+                        <rect key="frame" x="319" y="89" width="36" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="3Fl-eq-b9c"/>
+                            <constraint firstAttribute="height" constant="20" id="vKa-A0-khK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" image="ProjectIcon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD9-c4-kGW">
+                        <rect key="frame" x="111" y="29" width="251" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="S0p-Gf-SOu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-J6-ncU" userLabel="TimeLabel">
+                        <rect key="frame" x="111" y="89" width="198" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SUG-fc-fhk" firstAttribute="top" secondItem="kwy-J6-ncU" secondAttribute="top" id="3PD-2p-lNb"/>
+                    <constraint firstItem="kwy-J6-ncU" firstAttribute="leading" secondItem="uD9-c4-kGW" secondAttribute="leading" id="7Ik-eI-fV7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vdq-QK-0gM" secondAttribute="trailing" constant="10" id="7YW-tz-PQj"/>
+                    <constraint firstItem="SUG-fc-fhk" firstAttribute="bottom" secondItem="kwy-J6-ncU" secondAttribute="bottom" id="9fV-rQ-5ij"/>
+                    <constraint firstItem="uD9-c4-kGW" firstAttribute="top" secondItem="Vdq-QK-0gM" secondAttribute="bottom" constant="1" id="A0t-0H-ZMQ"/>
+                    <constraint firstItem="SUG-fc-fhk" firstAttribute="leading" secondItem="kwy-J6-ncU" secondAttribute="trailing" constant="10" id="Blx-MV-crV"/>
+                    <constraint firstItem="L4K-eS-2pA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="L9C-p1-bmo"/>
+                    <constraint firstItem="L4K-eS-2pA" firstAttribute="top" secondItem="Vdq-QK-0gM" secondAttribute="bottom" constant="2" id="ZXk-FE-nEQ"/>
+                    <constraint firstItem="SUG-fc-fhk" firstAttribute="top" secondItem="uD9-c4-kGW" secondAttribute="bottom" constant="20" id="Zms-Hn-H7h"/>
+                    <constraint firstItem="Vdq-QK-0gM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="idx-Cd-34j"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uD9-c4-kGW" secondAttribute="trailing" constant="5" id="lXc-bE-O3I"/>
+                    <constraint firstItem="uD9-c4-kGW" firstAttribute="leading" secondItem="L4K-eS-2pA" secondAttribute="trailing" constant="3" id="mwI-XN-roR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SUG-fc-fhk" secondAttribute="trailing" constant="12" id="r1t-TC-Wo3"/>
+                    <constraint firstItem="Vdq-QK-0gM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="rAN-bd-4lV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desLabel" destination="uD9-c4-kGW" id="kd8-9H-ujM"/>
+                <outlet property="iconImage" destination="L4K-eS-2pA" id="ffl-3Y-T4f"/>
+                <outlet property="timeLab" destination="kwy-J6-ncU" id="yPe-Lx-KEn"/>
+                <outlet property="title" destination="Vdq-QK-0gM" id="GTv-LU-Vxm"/>
+            </connections>
+            <point key="canvasLocation" x="430.5" y="316.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ProjectIcon" width="36" height="14"/>
+    </resources>
+</document>
